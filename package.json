@@ -1,0 +1,37 @@
+{
+  "name": "letters.js",
+  "version": "0.0.1",
+  "description": "Package to animate each letters of a word",
+  "main": "lib/letters.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guillaumerxl/letters.js.git"
+  },
+  "keywords": [
+    "letters",
+    "animation",
+    "dom",
+    "interaction"
+  ],
+  "author": {
+    "name": "Guillaume Rouxel",
+    "email": "guillaume.rouxel75@gmail.com",
+    "url": "http://www.guillaumerouxel.fr"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guillaumerxl/letters.js/issues"
+  },
+  "homepage": "https://github.com/guillaumerxl/letters.js",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-es6-module-transpiler": "^0.2.2",
+    "gulp-minify": "*"
+  }
+}
