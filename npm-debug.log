@@ -1,0 +1,85 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\grouxel\\Desktop\\Guillaume\\dev\\letters.js',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\grouxel\AppData\Roaming\npm-cache\letters.js\0.0.1\package.tgz not in flight; packing
+9 verbose tar pack [ 'C:\\Users\\grouxel\\AppData\\Roaming\\npm-cache\\letters.js\\0.0.1\\package.tgz',
+9 verbose tar pack   'C:\\Users\\grouxel\\Desktop\\Guillaume\\dev\\letters.js' ]
+10 verbose tarball C:\Users\grouxel\AppData\Roaming\npm-cache\letters.js\0.0.1\package.tgz
+11 verbose folder C:\Users\grouxel\Desktop\Guillaume\dev\letters.js
+12 info prepublish letters.js@0.0.1
+13 verbose unsafe-perm in lifecycle true
+14 verbose addLocalTarball adding from inside cache C:\Users\grouxel\AppData\Roaming\npm-cache\letters.js\0.0.1\package.tgz
+15 silly cache afterAdd letters.js@0.0.1
+16 verbose afterAdd C:\Users\grouxel\AppData\Roaming\npm-cache\letters.js\0.0.1\package\package.json not in flight; writing
+17 verbose afterAdd C:\Users\grouxel\AppData\Roaming\npm-cache\letters.js\0.0.1\package\package.json written
+18 silly publish { name: 'letters.js',
+18 silly publish   version: '0.0.1',
+18 silly publish   description: 'Package to animate each letters of a word',
+18 silly publish   main: 'lib/letters.min.js',
+18 silly publish   directories: { test: 'tests' },
+18 silly publish   scripts:
+18 silly publish    { build: 'webpack  --config webpack.build.js',
+18 silly publish      dev: 'webpack --progress --colors --watch --config webpack.dev.js',
+18 silly publish      prepublish: 'npm run build' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'https://github.com/guillaumerxl/letters.js.git' },
+18 silly publish   keywords: [ 'letters', 'animation', 'dom', 'interaction' ],
+18 silly publish   author:
+18 silly publish    { name: 'Guillaume Rouxel',
+18 silly publish      email: 'guillaume.rouxel75@gmail.com',
+18 silly publish      url: 'http://www.guillaumerouxel.fr' },
+18 silly publish   license: 'ISC',
+18 silly publish   bugs: { url: 'https://github.com/guillaumerxl/letters.js/issues' },
+18 silly publish   homepage: 'https://github.com/guillaumerxl/letters.js',
+18 silly publish   devDependencies:
+18 silly publish    { 'babel-loader': '^6.2.1',
+18 silly publish      'babel-plugin-add-module-exports': '^0.1.2',
+18 silly publish      'babel-preset-es2015': '^6.3.13',
+18 silly publish      webpack: '^1.12.11' },
+18 silly publish   readme: '## Letters.js\r\n\r\nThis is a library to animate words.\r\nIt\'s inspired by [Codedoodles](http://www.codedoodl.es).  \r\n\r\n# Installation\r\n\r\nYou can pick the library from this repo (lib/letters.min.js or lib/letters.js) or install it with:\r\n\r\n```\r\nnpm install letters.js\r\n```\r\n\r\n# Usage\r\n\r\n```\r\nnew Letters(container, words [, options ]);\r\n```\r\n\r\n# Examples\r\n\r\n#### Array of words\r\n```\r\nlet letters = new Letters(document.body, ["Array", "Of", "Words"]);\r\n```\r\n\r\n#### Array of arrays\r\n\r\nUse an array of words to change the word after the previous word\'s animation is done.\r\n```\r\nlet words = [\r\n  ["FirstWord", "SecondWord"],\r\n  ["FirstWord", "SecondWord"]\r\n];\r\nlet letters = new Letters(document.body, words);\r\n```\r\n\r\n#### Mix\r\n\r\nYou can mix single words with arrays of words. No matter the order.\r\n```\r\nlet words = [\r\n  "Single",\r\n  ["FirstWord", "SecondWord"],\r\n  ["FirstWord", "SecondWord"]\r\n];\r\nlet letters = new Letters(document.body, words);\r\n```\r\n\r\n## Options\r\n\r\n###### duration:\r\n- Type: `int` (default is `2`)\r\n- Usage: This is the period during which the letters will be animated\r\n- Warning: this is the number of seconds\r\n\r\n###### paused:\r\n- Type: `int` (default is `10`)\r\n- Usage: This is the time during which your words will be displayed in their original state\r\n- Warning: this is the number of seconds\r\n\r\n###### once:\r\n- Type: `boolean` (default is `false`)\r\n- Usage: If true, the letters animation will ocurred just once\r\n\r\n###### mode:\r\n- Type: `String` (default is `shuffle`)\r\n- Usage:\r\n  - `shuffle`: each letter will be replaced by another letter from the same word\r\n  - `alphabet`: each letter will be replaced by a random letter\r\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: 'ec91846c4ba5a065bfcab4e97c0e15da9d4bf76a',
+18 silly publish   _id: 'letters.js@0.0.1',
+18 silly publish   _shasum: '09788f9c078c337c36c600d45dc6584dd7ef5637',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name letters.js
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/letters.js
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading C:\Users\grouxel\AppData\Roaming\npm-cache\letters.js\0.0.1\package.tgz
+26 verbose stack Error: auth required for publishing
+26 verbose stack     at CachingRegistryClient.publish (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\publish.js:30:14)
+26 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\publish.js:134:14
+26 verbose stack     at mapToRegistry (C:\Program Files\nodejs\node_modules\npm\lib\utils\map-to-registry.js:55:3)
+26 verbose stack     at publish_ (C:\Program Files\nodejs\node_modules\npm\lib\publish.js:104:3)
+26 verbose stack     at Array.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+26 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+26 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:14:28)
+26 verbose stack     at chain (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+26 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\publish.js:73:5
+26 verbose stack     at RES (C:\Program Files\nodejs\node_modules\npm\node_modules\inflight\inflight.js:23:14)
+27 verbose cwd C:\Users\grouxel\Desktop\Guillaume\dev\letters.js
+28 error Windows_NT 6.1.7601
+29 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+30 error node v4.2.1
+31 error npm  v2.14.7
+32 error code ENEEDAUTH
+33 error need auth auth required for publishing
+33 error need auth You need to authorize this machine using `npm adduser`
+34 verbose exit [ 1, true ]

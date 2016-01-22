@@ -5,11 +5,10 @@ It's inspired by [Codedoodles](http://www.codedoodl.es).
 
 # Installation
 
-You can pick the library from this repo (letters.min.js or letters.js) or install it with:
+You can pick the library from this repo (lib/letters.min.js or lib/letters.js) or install it with:
 
 ```
-npm install letters
-bower install letters
+npm install letters.js
 ```
 
 # Usage
