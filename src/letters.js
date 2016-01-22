@@ -1,13 +1,14 @@
 export default class Letters {
 
-  constructor( container, words, options = {} ) {
+  constructor( words = ["PROVIDE", "WORDS"], container = document.body, options = {} ) {
 
+    let defaultAlphabet = "abcdefghijklmnopqrstuvwxyz0123456789&é~\"#'{}[]()-|è``_\\ç^à@=+°$£€¤µ*%ù§!/:.;?,><".split('');
     let defaultOptions = {
       duration: options.duration || 2,
       paused: options.paused || 10,
       mode: options.mode || "alphabet",
       once: options.once || false,
-      alphabet: options.alphabet || "abcdefghijklmnopqrstuvwxyz0123456789&é~\"#'{}[]()-|è``_\\ç^à@=+°$£€¤µ*%ù§!/:.;?,><".split('')
+      alphabet: options.alphabet ? ( typeof options.alphabet == "string" ? options.alphabet.split('') : options.alphabet ) : defaultAlphabet
     };
 
     this.options = defaultOptions;

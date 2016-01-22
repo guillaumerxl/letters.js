@@ -14,14 +14,14 @@ npm install letters.js
 # Usage
 
 ```
-new Letters(container, words [, options ]);
+new Letters( words [, container] [, options ]);
 ```
 
 # Examples
 
 #### Array of words
 ```
-let letters = new Letters(document.body, ["Array", "Of", "Words"]);
+let letters = new Letters(["Array", "Of", "Words"]);
 ```
 
 #### Array of arrays
@@ -32,7 +32,7 @@ let words = [
   ["FirstWord", "SecondWord"],
   ["FirstWord", "SecondWord"]
 ];
-let letters = new Letters(document.body, words);
+let letters = new Letters(words);
 ```
 
 #### Mix
@@ -44,7 +44,7 @@ let words = [
   ["FirstWord", "SecondWord"],
   ["FirstWord", "SecondWord"]
 ];
-let letters = new Letters(document.body, words);
+let letters = new Letters(words);
 ```
 
 ## Options
@@ -58,6 +58,10 @@ let letters = new Letters(document.body, words);
 - Type: `int` (default is `10`)
 - Usage: This is the time during which your words will be displayed in their original state
 - Warning: this is the number of seconds
+
+###### alphabet:
+- Type: `String` or `Array` (default is `abcdefghijklmnopqrstuvwxyz0123456789&é~\"#'{}[]()-|è``_\\ç^à@=+°$£€¤µ*%ù§!/:.;?,><`)
+- Usage: Pass the alphabet you want 
 
 ###### once:
 - Type: `boolean` (default is `false`)
