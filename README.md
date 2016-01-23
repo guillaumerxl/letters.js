@@ -5,24 +5,23 @@ It's inspired by [Codedoodles](http://www.codedoodl.es).
 
 # Installation
 
-You can pick the library from this repo (letters.min.js or letters.js) or install it with:
+You can pick the library from this repo (lib/letters.min.js or lib/letters.js) or install it with:
 
 ```
-npm install letters
-bower install letters
+npm install letters.js
 ```
 
 # Usage
 
 ```
-new Letters(container, words [, options ]);
+new Letters( words [, options ]);
 ```
 
 # Examples
 
 #### Array of words
 ```
-let letters = new Letters(document.body, ["Array", "Of", "Words"]);
+let letters = new Letters(["Array", "Of", "Words"]);
 ```
 
 #### Array of arrays
@@ -33,7 +32,7 @@ let words = [
   ["FirstWord", "SecondWord"],
   ["FirstWord", "SecondWord"]
 ];
-let letters = new Letters(document.body, words);
+let letters = new Letters(words);
 ```
 
 #### Mix
@@ -45,10 +44,14 @@ let words = [
   ["FirstWord", "SecondWord"],
   ["FirstWord", "SecondWord"]
 ];
-let letters = new Letters(document.body, words);
+let letters = new Letters(words);
 ```
 
 ## Options
+
+###### container:
+- Type: `String` or `DOMElement` (default is `document.body`)
+- Usage: This is the container where the words will be inserted in
 
 ###### duration:
 - Type: `int` (default is `2`)
@@ -59,6 +62,10 @@ let letters = new Letters(document.body, words);
 - Type: `int` (default is `10`)
 - Usage: This is the time during which your words will be displayed in their original state
 - Warning: this is the number of seconds
+
+###### alphabet:
+- Type: `String` or `Array` (default is `abcdefghijklmnopqrstuvwxyz0123456789&é~\"#'{}[]()-|è``_\\ç^à@=+°$£€¤µ*%ù§!/:.;?,><`)
+- Usage: Pass the alphabet you want
 
 ###### once:
 - Type: `boolean` (default is `false`)

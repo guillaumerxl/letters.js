@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Test ES5</title>
-  <script src="../lib/letters.min.js"></script>
+  <script src="../lib/letters.js"></script>
   <style>
     html, body {
       width: 100%;
@@ -45,7 +45,9 @@
 </body>
 <script>
 
-  var letters = new Letters(["LETTERS", "DOT", "JS"]);
+  var letters = new Letters(["LETTERS", ["DOT", "JS"] ], {
+    mode: "shuffle"
+  });
   letters.init();
 
 </script>
