@@ -52,6 +52,7 @@ let letters = new Letters(words);
 ###### container:
 - Type: `String` or `DOMElement` (default is `document.body`)
 - Usage: This is the container where the words will be inserted in
+- Warning: if you pass a `String`, make sure this is the element's id
 
 ###### duration:
 - Type: `int` (default is `2`)
