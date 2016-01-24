@@ -1,6 +1,6 @@
 {
   "name": "letters.js",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "Package to animate each letters of a word",
   "main": "lib/letters-common.js",
   "directories": {

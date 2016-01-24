@@ -42,6 +42,7 @@ export default class Letters {
             original: words.substr(j, 1),
             single: true
           };
+          span.innerHTML = words.substr(j, 1);
           span.addEventListener('mouseover', this.mouseOnLetter.bind( this ));
           span.addEventListener('mouseout', this.mouseOutLetter.bind( this ));
         }
@@ -74,6 +75,10 @@ export default class Letters {
             all: words,
             single: false
           };
+          span.innerHTML = this.wordsDom[ name ][ j ].original;
+          if ( this.wordsDom[ name ][ j ].original == '' ) {
+            span.className += ' letter-hidden';
+          }
           span.addEventListener('mouseover', this.mouseOnLetter.bind( this ));
           span.addEventListener('mouseout', this.mouseOutLetter.bind( this ));
         }

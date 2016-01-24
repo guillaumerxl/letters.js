@@ -47,7 +47,7 @@ let words = [
 let letters = new Letters(words);
 ```
 
-## Options
+# Options
 
 ###### container:
 - Type: `String` or `DOMElement` (default is `document.body`)
@@ -73,7 +73,7 @@ let letters = new Letters(words);
 - Usage: If true, the letters animation will ocurred just once
 
 ###### mode:
-- Type: `String` (default is `shuffle`)
+- Type: `String` (default is `alphabet`)
 - Usage:
   - `shuffle`: each letter will be replaced by another letter from the same word
   - `alphabet`: each letter will be replaced by a random letter
