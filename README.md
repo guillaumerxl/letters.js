@@ -11,6 +11,8 @@ You can pick the library from this repo (lib/letters.min.js or lib/letters.js) o
 npm install letters.js
 ```
 
+Then `var Letters = require('letters.js');`
+
 # Usage
 
 ```
